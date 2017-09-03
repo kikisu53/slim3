@@ -64,3 +64,6 @@
 2. [COMPOSER設計原理與基本用法 autoload](http://blog.turn.tw/?tag=autoload)
 3. [代碼、原始碼寫作風格 PSR-4 - PHP編碼規範](http://blog.webgolds.com/view/230#PSR-4)
 
+https://laravel-china.org/topics/1002/deep-composer-autoload
+
+composer dump-autoload
