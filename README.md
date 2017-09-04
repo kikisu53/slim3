@@ -63,7 +63,11 @@
 1. [PHP系列 - Autoload 自動載入](http://justericgg.logdown.com/posts/196891-php-series-autoload)
 2. [COMPOSER設計原理與基本用法 autoload](http://blog.turn.tw/?tag=autoload)
 3. [代碼、原始碼寫作風格 PSR-4 - PHP編碼規範](http://blog.webgolds.com/view/230#PSR-4)
-
+https://ahesanalisuthar.wordpress.com/2014/10/18/composer-part-1-autoload-manager-for-php-code/
+https://jsnwork.kiiuo.com/archives/2622/php-codeigniter-%e5%ae%89%e8%a3%9d%e4%b8%a6%e4%bd%bf%e7%94%a8-composer-%e8%87%aa%e5%8b%95%e8%bc%89%e5%85%a5%e5%ae%8c%e6%95%b4%e6%ad%a5%e9%a9%9f#autoload
 https://laravel-china.org/topics/1002/deep-composer-autoload
 
 composer dump-autoload
+
+## Route
+ return
