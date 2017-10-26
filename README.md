@@ -48,22 +48,40 @@
 6. 引用的時候， `$config = require __DIR__ . '/../config/config.php';`
 
 
-## Autoload (需安裝 Composer ) 和　Namespace
-> psr-4, files, classmap (psr-0 已經停用)
-1. [Composer的自动加载（autoload），dependencyautoload](http://www.bkjia.com/PHPjc/865616.html)
-1. [PHP系列 - Autoload 自動載入](http://justericgg.logdown.com/posts/196891-php-series-autoload)
-2. [COMPOSER設計原理與基本用法 autoload](http://blog.turn.tw/?tag=autoload)
-3. [代碼、原始碼寫作風格 PSR-4 - PHP編碼規範](http://blog.webgolds.com/view/230#PSR-4)
+## Autoload 和　Namespace
+### 指令
+1. 終端機指令 composer dump-autoload (需安裝 Composer )
+    * 每次修改 composer.json 的 autoload 或 autoload-dev 後，一定要執行 `composer dump-autoload` 。
+2. PHP 函數：`__autoload()`, `sql_autoload_register()`, `sql_autoload()` 。(PHP 5 以上支援)
+    * 參考 vendor 裡面的 autoload.php 和 coomposer/* 。
+### 分類 1. PSR-4, PSR-0 (psr-0 已經停用)
+    ```
+        "autoload": {
+            "psr-4": {
+                "Pro\\": "controllers/"
+            },
+            "psr-0": {
+                "Pro\\": "controllers/"
+            }
+        }
+    ```
+1. psr-4：試圖加載 Pro 這個 class 的時候，會去 `../controllers` 資料夾裡面找。
+2. psr-0：試圖加載 Pro 這個 class 的時候，會去 `../controllers/pro` 資料夾裡面找。
+3. 命名空間的結尾必須加上 `\\` ，以防出現 Pro 對應到 Project。 
+
+
+### 分類 2. Classmap, Files
+### Reference
 4. [php – Compoer – 非常簡單的使用 psr-4 來建立自動讀取類別](http://jsnwork.kiiuo.com/archives/2618/php-compoer-%e9%9d%9e%e5%b8%b8%e7%b0%a1%e5%96%ae%e7%9a%84%e4%bd%bf%e7%94%a8-psr-4-%e4%be%86%e5%bb%ba%e7%ab%8b%e8%87%aa%e5%8b%95%e8%ae%80%e5%8f%96%e9%a1%9e%e5%88%a5)
-
-## Autoload (需安裝 Composer ) 和　Namespace
-> psr-4, files, classmap (psr-0 已經停用)
-4. [Composer 使用 psr-4 來建立自動讀取類別](http://jsnwork.kiiuo.com/archives/2618/php-compoer-%e9%9d%9e%e5%b8%b8%e7%b0%a1%e5%96%ae%e7%9a%84%e4%bd%bf%e7%94%a8-psr-4-%e4%be%86%e5%bb%ba%e7%ab%8b%e8%87%aa%e5%8b%95%e8%ae%80%e5%8f%96%e9%a1%9e%e5%88%a5)
 1. [Composer的自动加载（autoload），dependencyautoload](http://www.bkjia.com/PHPjc/865616.html)
 1. [PHP系列 - Autoload 自動載入](http://justericgg.logdown.com/posts/196891-php-series-autoload)
 2. [COMPOSER設計原理與基本用法 autoload](http://blog.turn.tw/?tag=autoload)
 3. [代碼、原始碼寫作風格 PSR-4 - PHP編碼規範](http://blog.webgolds.com/view/230#PSR-4)
 
+
+https://jsnwork.kiiuo.com/archives/2622/php-codeigniter-%e5%ae%89%e8%a3%9d%e4%b8%a6%e4%bd%bf%e7%94%a8-composer-%e8%87%aa%e5%8b%95%e8%bc%89%e5%85%a5%e5%ae%8c%e6%95%b4%e6%ad%a5%e9%a9%9f#autoload
 https://laravel-china.org/topics/1002/deep-composer-autoload
 
-composer dump-autoload
+http://blog.csdn.net/sky_zhe/article/details/38615615
+## Route
+ return 
