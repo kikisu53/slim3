@@ -55,7 +55,7 @@
 2. [COMPOSER設計原理與基本用法 autoload](http://blog.turn.tw/?tag=autoload)
 3. [代碼、原始碼寫作風格 PSR-4 - PHP編碼規範](http://blog.webgolds.com/view/230#PSR-4)
 4. [php – Compoer – 非常簡單的使用 psr-4 來建立自動讀取類別](http://jsnwork.kiiuo.com/archives/2618/php-compoer-%e9%9d%9e%e5%b8%b8%e7%b0%a1%e5%96%ae%e7%9a%84%e4%bd%bf%e7%94%a8-psr-4-%e4%be%86%e5%bb%ba%e7%ab%8b%e8%87%aa%e5%8b%95%e8%ae%80%e5%8f%96%e9%a1%9e%e5%88%a5)
-
+http://blog.tonycube.com/2016/09/php-psr-4-autoloader.html
 ## Autoload (需安裝 Composer ) 和　Namespace
 > psr-4, files, classmap (psr-0 已經停用)
 4. [Composer 使用 psr-4 來建立自動讀取類別](http://jsnwork.kiiuo.com/archives/2618/php-compoer-%e9%9d%9e%e5%b8%b8%e7%b0%a1%e5%96%ae%e7%9a%84%e4%bd%bf%e7%94%a8-psr-4-%e4%be%86%e5%bb%ba%e7%ab%8b%e8%87%aa%e5%8b%95%e8%ae%80%e5%8f%96%e9%a1%9e%e5%88%a5)
