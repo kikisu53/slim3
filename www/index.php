@@ -23,10 +23,14 @@ $app->get('/hello/{name}', function ($request, $response, $args) {
 
 
 $app->get('/test', function($request, $response){
-//   $test = new Test;  
-$test = new \Controllers\Test;
-    $gt = $test -> showtest();
-    return $response -> getBody()->write($gt);
+//    $test = new Test;  
+//    $test = new \Controllers\Test;
+//    $gt = $test -> showtest();
+//    return $response->write($gt);
+    // $gt = $response->withRedirect('/hello/world', 302);
+    // var_dump($gt);
+    // return $gt;
+    return $response->withStatus(405);
 });
 
 // Run app
